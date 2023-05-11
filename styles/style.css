@@ -1,0 +1,173 @@
+
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-primario: #F9F9F9;
+    --cinza-secundario: #C0C0C0;
+    --vermelho: #EC2F46;
+    --preto-principal: #000000;
+    --preto-secundario: #040814;
+    --preto-fundo: #00030C;
+    --azul: #167BF7;
+    --fonte-principal:'Inter';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--preto-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat; /*para não repetir a imagem do fundo */
+    background-size: contain; /*dimensionando a img o máximo possível dentro do conteiner sem cortar ou esticar a imagem */
+    align-items: center; /*alinhando a seção */
+    text-align: center; /*alinhando a o texto dentro da seção */
+}
+  
+.container {
+    height: 100vh; /*imagem dos intrustores ocupando a tela inteira (altura) */
+    display: grid;  /*separa a tela (lembrar da linhazinha */
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao {
+    background-color: var(--azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em; /*distância entre os botões */
+    
+
+
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%; /*tá ocupando 80% da seção dele que foi dividada em 2 partes */
+}
+
+.secundario {
+    align-items: center; /*alinhando a imagem e o texto  */
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-primario); /*Não colocamos font-size e nem font-weight pq já está no body inteiro */
+}
+
+.secundario__botao { 
+    display: inline-block; /*Inline transforma o elemento em linha (deixou o botão no tamanha necessário) estudar isso aqui*/
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*tirando as bolinhas da lista*/
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.lista__item {
+   font-size: 32px;
+   font-weight: 700; 
+}
+
+.rodape {
+    text-align:  center;
+    
+   
+}
+
+.rodape__logo {
+    margin-bottom: 1em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /*alinhando no centro*/
+    gap: 1em;
+}
+    
+.lista__link a { 
+        text-decoration: none;
+        color: var(--branco-principal);
+        margin: 1em 0;
+
+    
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+
+} 
+
+.lista__link a:hover { /*quando clicar no botão vai ficar*/
+    color: var(--azul); 
+}
+
+/*não estou conseguindo estilizar os links
+.lista__link a{ estudar esse "a"
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+
+
+*/
